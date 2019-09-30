@@ -1,0 +1,14 @@
+#navbar-component {
+
+}
+
+#navbar-component .navbar-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-component .navbar-container .links-container a {
+    margin: 0 10px;
+}
