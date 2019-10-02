@@ -6,13 +6,10 @@ const Navbar = () => {
     return (
         <div id='navbar-component' className="navbar-wrapper">
             <div className="navbar-container container">
-                <div className="logo-area">
-                    <h1>Syn Studio</h1>
-                </div>
                 <div className="links-container">
-                    <a href="/">About</a>
-                    <a href="/">Work</a>
-                    <a href="/">Contact</a>
+                    <a href="/" className='link'>About</a>
+                    <a href="/" className='link'>Work</a>
+                    <a href="/" className='link'>Contact</a>
                 </div>
             </div>
         </div>

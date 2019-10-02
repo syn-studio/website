@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+}
+
+.page-container {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: initial;
+    position: relative;
+
+    &.link-colored-box {
+        
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 20px;
+            bottom: -5px;
+            background: yellow;
+            z-index: -1;
+            transition: width .2s ease-out;
+        }
+
+        &:hover {
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}

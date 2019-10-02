@@ -1,0 +1,38 @@
+$spacing: 20px;
+
+#we-are-component {
+    margin-top: -80px;
+
+    .we-are-container {
+        width: 800px;
+        border: 2px solid black;
+
+        .we-are-header {
+            padding: 0 $spacing;
+            margin: $spacing 0;
+            height: 40px;
+            // padding-bottom: $spacing;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            h1 {
+                font-size: 18px;
+                position: relative;
+            }
+
+            .line {
+                flex-grow: 1;
+                height: 1px;
+                background: black;
+                margin-left: $spacing;
+            }
+        }
+
+        > p {
+            padding: 0 $spacing 30px $spacing;
+            font-size: 38px;
+            font-weight: medium;
+        }
+    }
+}

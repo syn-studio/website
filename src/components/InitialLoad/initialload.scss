@@ -1,0 +1,63 @@
+#initial-load-component {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    pointer-events: none;
+    
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+        z-index: 2;
+        animation: spin 2s ease-out forwards;
+    }
+
+    .left, .right {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        background: black;
+    }
+
+    .left {
+        left: 0;
+        animation: flyLeftOut .7s ease-in 2.3s forwards;
+    }
+
+    .right {
+        right: 0;
+        animation: flyRightOut .7s ease-in 2.3s forwards;
+    }
+}
+
+@keyframes spin {
+    from {
+        opacity: 0;
+        transform: rotate( 0 );
+    }
+    to {
+        opacity: 1;
+        transform: rotate( 360deg );
+    }
+}
+
+@keyframes flyLeftOut {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes flyRightOut {
+    from {
+        right: 0;
+    }
+    to {
+        right: -100%;
+    }
+}

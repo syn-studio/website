@@ -1,0 +1,27 @@
+#main-hero-component {
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+
+#main-hero-component .cta-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+#main-hero-component .cta-container img {
+  height: 40px;
+  margin-bottom: 10px; }
+
+#main-hero-component .cta-container .main-cta {
+  font-size: 48px; }

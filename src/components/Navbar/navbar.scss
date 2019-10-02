@@ -1,0 +1,14 @@
+#navbar-component .navbar-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding-top: 50px;
+
+    .links-container {
+
+        .link {
+            margin-left: 80px;
+            font-size: 18px;
+        }
+    }
+}

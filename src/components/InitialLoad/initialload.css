@@ -1,0 +1,73 @@
+#initial-load-component {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  z-index: 5;
+  pointer-events: none; }
+  #initial-load-component img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    -webkit-animation: spin 2s ease-out forwards;
+    animation: spin 2s ease-out forwards; }
+  #initial-load-component .left, #initial-load-component .right {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background: black; }
+  #initial-load-component .left {
+    left: 0;
+    -webkit-animation: flyLeftOut .7s ease-in 2.3s forwards;
+    animation: flyLeftOut .7s ease-in 2.3s forwards; }
+  #initial-load-component .right {
+    right: 0;
+    -webkit-animation: flyRightOut .7s ease-in 2.3s forwards;
+    animation: flyRightOut .7s ease-in 2.3s forwards; }
+
+@-webkit-keyframes spin {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes flyLeftOut {
+  from {
+    left: 0; }
+  to {
+    left: -100%; } }
+
+@keyframes flyLeftOut {
+  from {
+    left: 0; }
+  to {
+    left: -100%; } }
+
+@-webkit-keyframes flyRightOut {
+  from {
+    right: 0; }
+  to {
+    right: -100%; } }
+
+@keyframes flyRightOut {
+  from {
+    right: 0; }
+  to {
+    right: -100%; } }

@@ -1,14 +1,15 @@
-#navbar-component {
-
-}
-
 #navbar-component .navbar-container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#navbar-component .navbar-container .links-container a {
-    margin: 0 10px;
-}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-top: 50px; }
+  #navbar-component .navbar-container .links-container .link {
+    margin-left: 80px;
+    font-size: 18px; }
