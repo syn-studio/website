@@ -1,0 +1,26 @@
+#big-down-arrow-component {
+    position: fixed;
+    left: 10%;
+    z-index: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    top: 0;
+    transition: all .2s ease-out;
+
+    .arrow-shaft {
+        width: 70px;
+        flex-grow: 1;
+        background: black;
+    }
+
+    .arrow-tip {
+        border: 50px solid transparent;
+        border-top-color: black;
+    }
+
+    &.fall-down {
+
+    }
+
+}

@@ -1,11 +1,14 @@
 #we-are-component {
-  margin-top: -80px; }
+  margin-top: -100px;
+  z-index: 3;
+  position: relative; }
   #we-are-component .we-are-container {
     width: 800px;
-    border: 2px solid black; }
+    background: white;
+    border: 5px solid black; }
     #we-are-component .we-are-container .we-are-header {
-      padding: 0 20px;
-      margin: 20px 0;
+      padding: 0 30px;
+      margin: 30px 0;
       height: 40px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -18,16 +21,18 @@
       -ms-flex-align: center;
       align-items: center; }
       #we-are-component .we-are-container .we-are-header h1 {
-        font-size: 18px;
+        font-size: 22px;
         position: relative; }
+        #we-are-component .we-are-container .we-are-header h1 span {
+          font-weight: 300; }
       #we-are-component .we-are-container .we-are-header .line {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
         height: 1px;
         background: black;
-        margin-left: 20px; }
+        margin-left: 30px; }
     #we-are-component .we-are-container > p {
-      padding: 0 20px 30px 20px;
+      padding: 0 30px 30px 30px;
       font-size: 38px;
       font-weight: medium; }

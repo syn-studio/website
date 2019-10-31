@@ -1,0 +1,26 @@
+#work-component {
+  margin-top: 100px; }
+  #work-component .work-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap; }
+    #work-component .work-row .work {
+      height: 300px;
+      width: 300px;
+      border: 1px solid black;
+      margin: 10px;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
+      #work-component .work-row .work.colored1 {
+        background: #ffc6cf;
+        border: none; }
+      #work-component .work-row .work.colored2 {
+        background: #ffedf0;
+        border: none; }
+    #work-component .work-row.work-row-2 {
+      left: -30%;
+      position: relative; }

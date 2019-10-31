@@ -1,7 +1,28 @@
 #main-hero-component {
     height: 100vh;
     width: 100vw;
+    z-index: 2;
     position: relative;
+}
+
+#main-hero-component .main-hero-wrapper {
+    height: 80%;
+    background: #FFEDF0;
+    position: relative;
+    // cursor: none;
+    overflow: hidden;
+
+    .circle {
+        top: 0;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background: black;
+        border-radius: 50%;
+        // transition: .1s;
+        // mix-blend-mode: difference;
+        z-index: 3;
+    }
 }
 
 #main-hero-component .cta-container {
@@ -14,10 +35,10 @@
 }
 
 #main-hero-component .cta-container img {
-    height: 40px;
-    margin-bottom: 10px;
+    height: 30px;
+    margin-bottom: 20px;
 }
 
 #main-hero-component .cta-container .main-cta {
-    font-size: 48px;
+    font-size: 38px;
 }

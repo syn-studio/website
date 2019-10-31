@@ -1,0 +1,31 @@
+#work-component {
+    margin-top: 100px;
+
+    .work-row {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .work {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            margin: 10px;
+            flex-shrink: 0;
+
+            &.colored1 {
+                background: #ffc6cf;
+                border: none;
+            }
+
+            &.colored2 {
+                background: #ffedf0;
+                border: none;
+            }
+        }
+
+        &.work-row-2 {
+            left: -30%;
+            position: relative;
+        }
+    }
+}

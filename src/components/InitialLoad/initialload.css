@@ -35,8 +35,8 @@
     transform: rotate(0); }
   to {
     opacity: 1;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg); } }
 
 @keyframes spin {
   from {
@@ -45,8 +45,8 @@
     transform: rotate(0); }
   to {
     opacity: 1;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg); } }
 
 @-webkit-keyframes flyLeftOut {
   from {
